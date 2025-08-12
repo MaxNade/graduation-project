@@ -1,0 +1,142 @@
+.info_tab{
+  margin-top: 80px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.info_container{
+  padding: 10px;
+  width: 1200px;
+  min-width: 1200px;
+}
+.pic{
+  height: auto;
+  width:  340px;
+  padding: 20px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.about{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.text{
+  margin-left: 20px;
+  width: 700px;
+  height: fit-content;
+}
+.text h2{
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.text p{
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-indent: 30px;
+}
+.data{
+  margin-top: 30px;
+}
+.mappage{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  /* border: 3px solid; */
+}
+.mapinfo{
+  margin: 50px;
+  text-indent: 30px;
+}
+.mapinfo h2{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.mapinfo p{
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.mapdisplay{
+  padding: 10px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.undermaptext{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.moreinfo{
+  /* border: dotted black; */
+  text-align: left;
+  text-indent: 30px;
+  /* margin-top: 50px; */
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.moreinfo-con{
+  width: fit-content;
+  /* border: dotted black; */
+}
+.moreinfo h2{
+  /* border: dotted black; */
+  width: 100%;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+
+}
+.moreinfo p{
+  /* border: dotted black; */
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  width: 800px;
+  margin-bottom: 10px;
+}
+.requisites{
+  /* margin-top: 50px; */
+  text-align: center;
+  /* border: dotted black; */
+}
+.requisites a{
+  color: #4070f4;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  transition: 0.4s;
+
+}
+.requisites a:hover{
+  color: purple;
+  text-decoration: underline;
+}
+.requisites p{
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,733 @@
+@media (max-width: 1920px) {
+    .menu-toggle, .show-sidebar, #bottom-bar, 
+    .show-search, .show-search img, .search-bar{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    /* Стили для маленьких мобильных устройств */
+    
+    .logo_pic{
+        display: none;
+    }
+
+    #info, #cart{
+        margin-bottom: 50px;
+    }
+
+    /* поисковая строка и кнопка */
+    .show-search {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 0px;
+        z-index: 998;
+    }
+    
+    .show-search img {
+        width: 50px;
+        display: flex;
+    }
+    
+    .search-bar {
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background: #fff;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-bar button{
+        margin-left: 3%;
+    }
+    
+
+
+
+    /* свайпы */
+    /* #sidebar-swipe-area {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        background-color: rgba(0, 255, 0, 0.2);
+        z-index: 9999;
+        pointer-events: none;
+    }
+    
+    #main-swipe-area {
+        position: fixed;
+        top: 0;
+        left: 50px;
+        width: calc(100% - 50px);
+        height: 100%;
+        background-color: rgba(0, 0, 255, 0.2);
+        z-index: 9998;
+        pointer-events: none;
+    } */  
+
+    body{
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+    /* НАВБАР */
+    .menu-toggle{
+        display: flex;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 0px;
+        z-index: 998;
+    }
+
+    .show-sidebar {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 0px;
+        z-index: 998;
+    }
+    
+    .show-sidebar img{
+        width: 50px;
+    }
+    
+    .menu-toggle img{
+        width: 50px;
+    }
+
+    nav {
+        /* position: relative; */
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-start;
+
+        z-index: 1000;
+
+    }
+
+    /* Скрытие меню по умолчанию */
+    nav ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+    }
+    /* Плавное открытие меню */
+    nav.menu-open ul {
+
+        max-height: 500px; 
+        transition: max-height 0.3s ease-in;
+    }
+    
+    nav li {
+        justify-content: center;
+        display: flex;
+    }
+    
+    nav button {
+        text-align: left;
+        width: 60%;
+        text-align: center;
+    }
+    
+    #searchInput{
+        width: 60%;
+    }
+
+    /* панель навигации */
+    /* Стили для нижней навигационной панели */
+    #bottom-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+
+
+    }
+
+    #bottom-bar button {
+        color: black;
+        background: none;
+        border: none;
+        font-size: 16px;
+    }
+
+    #bottom-bar button.selected {
+        color: #4070f4;
+        font-weight: bold;
+    }
+
+    footer {
+        display: none;
+        min-width: 0px;
+        position: unset;
+        /* display: inline-table; */
+    }
+
+    /* info_tab */
+    .info_tab{
+        margin-top: 0px;
+        margin-bottom: 0px;       
+    }
+
+    .info_container{
+        padding: 0px;
+        width: 1200px;
+        min-width: 100%;
+    }
+
+    .mapdisplay {
+        width: fit-content;
+    }
+    
+    .mappage{
+        width: 100%;
+        padding: 5px 20px 5px 20px;
+        margin-bottom: 0px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mappage img{
+        display: none;
+    }
+
+    iframe{
+        height: 400px;
+        width: 100%;
+    }
+
+    .mapinfo{
+        margin: 0px;
+    }
+
+    .mapinfo h2{
+        width: 100%;
+    }
+
+    .moreinfo{
+        margin-bottom: 0px;
+    }
+
+    .moreinfo-con{
+        width: 100%;
+        padding: 5px 20px 5px 20px;
+
+    }
+
+    .moreinfo p{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 5px;
+    }
+
+    .requisites{
+        width: 100%;
+        padding: 5px 20px 5px 20px;
+    }
+
+    /* catalog */
+    .split{
+        width: 100%;
+        min-width: 0px;
+
+    }
+
+    .category-content{
+        padding-top: 0px;
+        padding-bottom: 45px;
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .product-card{
+        width: 100%;
+    }
+
+    .product-card:hover{
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+            inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        transform: translateY(0px) translateX(0px);
+        border-radius: 10px;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+    }
+
+    .product_category_card {
+
+        padding-top: 10px;
+        padding-bottom: 60px;
+
+        position: absolute;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.267);
+        backdrop-filter: blur(5px); 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 999;
+
+    }
+
+    .container_with_products {
+        flex-grow: 1;
+        padding-left: 0px;
+        padding-right: 0px;
+
+
+    }
+
+    /* cart */
+    .contents_cart{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+        display: block;
+
+        width: 100%;
+        height: fit-content;
+    }
+
+    .table_con{
+        width: 100%;
+        overflow-y: auto;
+        height: fit-content;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    td:nth-child(2) input {
+        min-width: 0px;
+    }
+
+    .cart_table{
+        width: 100%;
+    }
+
+    .empty-cart-message{
+        width: 100%;
+    }
+
+    .form_con{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+
+    /* НАВБАР */
+    .menu-toggle{
+        display: flex;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 0px;
+        z-index: 998;
+    }
+    .menu-toggle img{
+        width: 50px;
+    }
+    nav {
+        /* position: relative; */
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-start;
+
+        z-index: 1000;
+
+    }
+
+    /* Скрытие меню по умолчанию */
+    nav ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+    }
+    /* Плавное открытие меню */
+    nav.menu-open ul {
+
+        max-height: 500px; 
+        transition: max-height 0.3s ease-in;
+    }
+    
+    nav li {
+        justify-content: center;
+        display: flex;
+    }
+    
+    nav button {
+        text-align: left;
+        width: 40%;
+        text-align: center;
+    }
+    
+    #searchInput{
+        width: 40%;
+    }
+
+    /* панель навигации */
+    /* Стили для нижней навигационной панели */
+    #bottom-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+
+    }
+
+    #bottom-bar button {
+        color: black;
+        background: none;
+        border: none;
+        font-size: 16px;
+    }
+
+    #bottom-bar button.selected {
+        color: #4070f4;
+        text-decoration: solid;
+    }
+
+    footer {
+        display: none;
+        min-width: 0px;
+        position: unset;
+        /* display: inline-table; */
+    }
+
+    
+    /* info_tab */
+    .info_tab{
+        margin-top: 0px;
+        margin-bottom: 0px;       
+    }
+
+    .info_container{
+        padding: 0px;
+        width: 1200px;
+        min-width: 100%;
+    }
+
+    .mapdisplay{
+        display: none;
+    }
+    
+    .mappage{
+        width: 100%;
+        padding: 20px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .mappage img{
+        display: none;
+    }
+
+    .mapinfo{
+        margin: 0px;
+    }
+
+    .mapinfo h2{
+        width: 100%;
+    }
+
+    .moreinfo{
+        margin-bottom: 0px;
+    }
+
+    .moreinfo-con{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .moreinfo p{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 5px;
+    }
+
+    .requisites{
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* catalog */
+    .split{
+        width: 100%;
+        min-width: 0px;
+
+    }
+
+    .category-content{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .product_category_card {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logo_pic{
+        display: none;
+    }
+
+    /* cart */
+    .contents_cart{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+        display: block;
+
+        width: 100%;
+        height: fit-content;
+    }
+
+    .table_con{
+        width: 100%;
+        overflow-y: auto;
+        height: fit-content;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    td:nth-child(2) input {
+        min-width: 0px;
+    }
+
+    .cart_table{
+        width: 100%;
+    }
+
+    .empty-cart-message{
+        width: 100%;
+    }
+
+    .form_con{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 951px) and (max-width: 1450px)  {
+
+    .logo_pic{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: flex;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 0px;
+        z-index: 998;
+    }
+
+    .menu-toggle img{
+        width: 50px;
+    }
+
+    nav {
+        /* position: relative; */
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-start;
+
+        z-index: 1000;
+
+    }
+
+    /* Скрытие меню по умолчанию */
+    nav ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+    }
+    /* Плавное открытие меню */
+    nav.menu-open ul {
+
+        max-height: 500px; 
+        transition: max-height 0.3s ease-in;
+    }
+    
+    nav li {
+        justify-content: center;
+        display: flex;
+    }
+    
+    nav button {
+        text-align: left;
+        width: 20%;
+        text-align: center;
+    }
+
+    /* панель навигации */
+    /* Стили для нижней навигационной панели */
+    #bottom-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+
+    }
+
+    #bottom-bar button {
+        color: black;
+        background: none;
+        border: none;
+        font-size: 16px;
+    }
+
+    #bottom-bar button.selected {
+        color: #4070f4;
+        text-decoration: solid;
+    }
+    
+    #searchInput{
+        width: 20%;
+    }
+
+    footer {
+        display: none;
+        min-width: 0px;
+        position: unset;
+    }
+
+
+    /* cart */
+    .contents_cart{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .table_con{
+        width: 100%;
+        overflow-y: auto;
+        height: 100vh;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    td:nth-child(2) input {
+        min-width: 0px;
+    }
+
+    .cart_table{
+        width: 100%;
+    }
+
+    .empty-cart-message{
+        width: 100%;
+    }
+
+
+    /* catalog */
+    .split{
+        width: 100%;
+        min-width: 0px;
+
+    }
+
+    .category-content{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .product_category_card {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    /* info_tab */
+    .info_tab{
+        margin-top: 0px;
+        margin-bottom: 0px;       
+    }
+
+    .info_container{
+        padding: 0px;
+        width: 1200px;
+        min-width: 100%;
+    }
+
+    .mapinfo h2{
+        width: 100%;
+    }
+    .moreinfo-con{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .moreinfo p{
+        width: 100%;
+        margin-bottom: 5px;
+    } 
+
+}
+  

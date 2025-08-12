@@ -1,0 +1,112 @@
+.cart_con{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+}
+
+.contents_cart{
+    /* border: 3px solid red; */
+    width: fit-content;
+    height: fit-content;
+    margin-top: 120px;
+    margin-bottom: 60px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.contents_cart h1{
+    text-decoration: underline;
+}
+
+.cart_bar{
+    /* border: 3px dotted blue; */
+    width: 100%;
+    height: fit-content;    
+}
+
+.table_con{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+}
+
+.empty-cart-message{
+    width: 690px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    border: 2px solid;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+th, td {    
+    padding: 10px;
+    border: 2px solid;
+    text-align: left;
+}
+
+td:nth-child(1) input {
+    min-width: 100px;
+    max-width: 100%;
+}
+
+td:nth-child(2) input {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.information_about_buyer{
+    padding: 20px;
+}
+
+.form_con{
+    padding: 20px;
+    height: fit-content;
+    width: 400px;
+    border: 2px solid ;
+    border-collapse: collapse;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* #submit{
+    margin-top: 10px;
+    float: right;
+} */
+
+/* Стили для контейнера */
+.but_con {
+    display: flex; /* Используем flexbox для размещения элементов */
+    justify-content: space-between; /* Равномерное распределение пространства между дочерними элементами */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+/* Стили для кнопки */
+#submit {
+    /* Предполагаемые стили */
+    padding: 10px 20px; /* Задаем отступы кнопки */
+    font-size: 16px; /* Размер шрифта */
+    color: #fff; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 10px; /* Задаем скругленные углы */
+    cursor: pointer; /* Устанавливаем курсор в виде указателя */
+    float: right;
+}
+
+#submit:hover {
+    /* Стили при наведении на кнопку */
+    background-color: green; /* Изменяем цвет фона */
+}

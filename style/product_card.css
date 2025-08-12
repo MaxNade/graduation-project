@@ -1,0 +1,123 @@
+/* Стили для контейнера с продуктами */
+.container_with_products {
+  width: 100%;
+}
+
+/* Стили для контейнера с категорией товаров */
+.category-content {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+/* Общие стили для карточек товаров */
+.product-card {
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  min-width: 270px;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  transition: 0.4s ease;
+}
+
+.product-card:hover {
+  box-shadow: inset 5px 5px 5px rgb(0, 0, 0),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.89), -5px -5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px) translateX(-3px);
+  border-radius: 20px;
+}
+
+.cardimage img {
+  width: 250px;
+  min-width: 250px;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.product-price {
+  color: #ff0000;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.product-description {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.product-description p {
+  text-indent: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  min-height: 170px;
+}
+
+.cardinfo {
+  width: fit-content;
+  padding: 10px;
+  margin-left: 0;
+}
+
+.cardimage {
+  padding: 10px;
+  height: fit-content;
+}
+
+.notFoundMessage {
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 380px;
+}
+
+.product-materials {
+  margin-bottom: 10px;
+}
+
+.product-materials p {
+  margin-right: 20px;
+  font-size: 16px;
+  width: fit-content;
+}
+
+
+button:hover {
+  background: red;
+}
+
+button.addToCart {
+  background-color: #4070f4;
+}
+
+button.addToCart:hover {
+  background-color: #000;
+}
+
+button.inCart {
+  background-color: #ff0000;
+  cursor: not-allowed;
+}
+
+button.inCart:hover {
+  background-color: #ff0000;
+}
+
+

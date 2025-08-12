@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+    background-color: #f7f5f3;
+
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.267); /* Цвет фона с прозрачностью */
+    backdrop-filter: blur(5px); /* Размытие */
+    z-index: 1000;
+    height: fit-content;
+    display: flex;
+    min-width: 650px;
+    /* border: 3px solid black; */
+
+}
+
+nav img{
+
+    /* border: 3px solid black; */
+    height: 51px;
+    float: left;
+    cursor: pointer;
+}
+
+button{
+    font-size: 16px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 10px;
+    transition: 0.4s;
+    width: fit-content;
+    cursor: pointer;
+}
+
+nav button{
+    margin: 5px;
+}
+
+nav button:hover{
+    box-shadow: +5px -5px 10px #4070f4;
+    background: #000000;
+    transform: translateY(+3px) translateX(-3px);
+}
+
+nav button.darkened {
+    box-shadow: +5px -5px 10px #4070f4;
+    background: #000000;
+    transform: translateY(+3px) translateX(-3px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+
+}
+
+li {
+    display: inline-block;
+    /* border: dotted 3px; */
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(55, 62, 126);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+    height: 50px; /* Высота футера */
+    color: #000000;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0.267); /* Цвет фона с прозрачностью */
+    backdrop-filter: blur(5px); /* Размытие */
+    /* z-index: 1000; */
+    /* border: 3px dotted; */
+    min-width: 1200px;
+}
+
+footer a{
+    color: #000000;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+footer p{
+    margin-right: 5%;
+    font-weight: bold;
+}
+
+.tab-content {
+    width: 100%;
+    height: 100%;
+}
+
+
+.split{
+    display: flex;
+    min-width: 500px;
+}
+
+/* Изменяем ширину вертикального скроллбара и высоту горизонтального скроллбара */
+::-webkit-scrollbar {
+    width: 8px;  /* для вертикального скроллбара */
+    height: 8px; /* для горизонтального скроллбара */
+}
+  
+  /* Стиль для самой дорожки скроллбара */
+::-webkit-scrollbar-track {
+background: #ffffff; 
+}
+  
+  /* Стиль для ползунка скроллбара */
+::-webkit-scrollbar-thumb {
+    background: #4070f4; 
+    border-radius: 10px;
+}
+  
+  /* Стиль для ползунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+    background: black; 
+}
+  
+
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px #4070f4;
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.product-card.highlight {
+    border: 2px solid #4070f4; /* Вы можете изменить это на нужный вам стиль */
+    animation: pulse 1s infinite; /* Анимация пульсации */
+}
+
+input,
+textarea {
+  font-size: 16px;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  resize: none;
+  overflow-y: hidden; 
+}
+
+select{
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 10px;
+}
